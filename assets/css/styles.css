@@ -1,6 +1,6 @@
 /* ==== GOOGLE FONTS ==== */
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* ==== CSS VARIABLES ==== */
 :root{
     --header-height: 3rem;
@@ -16,6 +16,7 @@
 /* ==== FONTS AND TYPOGRAPHY ==== */
 :root{
     --body-font: 'Poppins', sans-serif;
+    --project-font: 'MonteCarlo';
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
@@ -95,6 +96,15 @@ img{
     margin: auto;
     top: 2rem;
     background-color: var(--first-color);
+}
+.project-title{
+    position: relative;
+    font-family: var(--project-font);
+    font-size: var(--h2-font-size);
+    color: var(--second-color);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
 }
 .section{
     padding-top: 3rem;
@@ -319,7 +329,7 @@ img{
     row-gap: 2rem;
 }
 .work__img{
-    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    box-shadow: 0 4px 25px rgba(14,36,49,.65);
     border-radius: .5rem;
     overflow: hidden;
 }
@@ -328,6 +338,13 @@ img{
     cursor: pointer;
 }
 .work__img img:hover{
+    transform: scale(1.1);
+}
+.project-title{
+    transition: 1s;
+    cursor: pointer;
+}
+.project-title:hover{
     transform: scale(1.1);
 }
 
