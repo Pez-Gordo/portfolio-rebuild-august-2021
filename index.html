@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    <img src="assets/img/code.jpg" alt="" class="skills__img">
                 </div>
             </div>
         </section>
@@ -209,12 +209,11 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                    <input type="button" value="Send" class="contact__button button">
+                <form id="my_form" method="POST" onsubmit="submitForm(); return false;" class="contact__form">
+                    <input type="text" placeholder="Name" name="n" id="n" class="contact__input" required>
+                    <input type="mail" placeholder="Email" name="e" id="e" class="contact__input" required>
+                    <textarea name="m" placeholder="Your message here..." id="m" cols="0" rows="10" class="contact__input" required></textarea>
+                    <input type="submit" value="Send" id="mybtn" class="contact__button button"><span id="status"></span>
                 </form>
             </div>
         </section>
